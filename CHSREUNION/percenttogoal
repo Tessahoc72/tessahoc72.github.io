@@ -1,0 +1,20 @@
+<script src="amount.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+var amount = window.chs_current_amount;
+
+var goal = window.chs_goal_amount;
+
+var percent = Math.ceil(100 * (amount / goal)) + '%';
+
+var thermometer = document.getElementById('thermometer');
+
+thermometer.src = 'http://www.fundraiserinsight.org/libs/thermometer.php?current=' + amount + '&max=' + goal + '&curr=36&t_id=198868&skin=big_vert';
+
+var progress = document.getElementById('progress');
+
+progress.innerHTML = 'We have reached ' + percent + ' of our goal';
+
+</script>

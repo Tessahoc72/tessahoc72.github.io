@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Class of 72</title>
+
+<link rel="stylesheet" href="chs.css" type="text/css"/>
+
+</head>
+<body bgcolor="#D8F0F8" lang=EN-US>
+<a href="r40.html" ><img width=100 height=126 src="../images/balloons.jpg" title="back to 40th page" border="1" /></a>
+
+<h1> Countdown to Reunion </h1>
+
+<div style="DISPLAY: inline; FONT-SIZE: 18pt; LEFT: 100px; WIDTH: 200px; POSITION: absolute; TOP: 400px;">
+<!-- NOTES : Countdown Timer can be positioned via the above LEFT: nnn px and TOP: nnn px attributes -->
+
+<SCRIPT type="text/javascript">
+function mesiqg8(theyear,themonth,theday,thehour,themin,thesec)
+{yr=theyear;mo=themonth;da=theday;hr=thehour;min=themin;sec=thesec}
+mesiqg8(2012,Oct,18,19,00,00)
+var occasion = "40th class reunion"
+var message_on_occasion= "Let's Party!"
+var countdownwidth='600px'
+var countdownheight='35px'
+var countdownbgcolor='transparent'
+var opentags='<font face="Garamond" color="black"><Larger><b>'
+var closetags='<b></larger></font>'
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var crosscount=''
+function tes3qqxk(){
+if (document.layers)
+document.countdownnsmain.visibility="show"
+else if (document.all||document.getElementById)
+crosscount=document.getElementById&&!document.all?document.getElementById("countdownie")
+: countdownie
+countdown( )}
+if (document.all||document.getElementById)
+document.write('<span id="countdownie" style="width:'+countdownwidth+'; background-color:'+countdownbgcolor+'"></span>')
+window.onload=tes3qqxk
+function countdown(){
+var today=new Date()
+var todayy=today.getYear()
+if (todayy < 1000)
+todayy+=1900
+var todaym=today.getMonth()
+var todayd=today.getDate()
+var todayh=today.getHours()
+var todaymin=today.getMinutes()
+var todaysec=today.getSeconds()
+var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+futurestring=montharray[mo-1]+" "+da+", "+yr+" "+hr+":"+min+":"+sec
+dd=Date.parse(futurestring)-Date.parse(todaystring)
+dday=Math.floor(dd/(60*60*1000*24)*1)
+dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=1&&todayd==da){
+if (document.layers){
+document.countdownnsmain.document.countdownnssub.document.write(opentags +message_on_occasion +closetags)
+document.countdownnsmain.document.countdownnssub.document.close()}
+else if (document.all||document.getElementById)
+crosscount.innerHTML=opentags +message_on_occasion +closetags
+return
+}
+else if (dday<=-1){
+if (document.layers){
+document.countdownnsmain.document.countdownnssub.document.write(opentags +"Reset Countdown"+closetags)
+document.countdownnsmain.document.countdownnssub.document.close()
+}
+else if (document.all||document.getElementById)
+crosscount.innerHTML=opentags +"Please Check Countdown "+closetags
+return
+}
+else{
+if (document.layers){
+document.countdownnsmain.document.countdownnssub.document.write(opentags + dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" seconds left until " +occasion +closetags)
+document.countdownnsmain.document.countdownnssub.document.close()
+}
+else if (document.all||document.getElementById)
+crosscount.innerHTML=opentags +dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" seconds left until " +occasion +closetags
+}
+setTimeout("countdown()",1000)
+}
+</script>
+<ilayer id="countdownnsmain" width=&{countdownwidth}; height=&{countdownheight}; bgColor=&{countdownbgcolor}; visibility=hide><layer id="countdownnssub" width=&{countdownwidth}; height=&{countdownheight}; left=0 top=0></layer></ilayer>
+
+
+
+</div>
+</body>
+</html>
+

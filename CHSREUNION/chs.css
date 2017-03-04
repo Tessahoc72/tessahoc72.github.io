@@ -26,6 +26,7 @@ ul  {font-size: 20px; FONT-STYLE: italic;
 table	{border-collapse: collapse;
 	margin: auto;
 	background-color: #FFFFFF;}
+	table.no-border td { border-color:transparent;}
 
 th,td	{text-align: left;
 	border: 2px solid #000080;

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Class of 72</title>
+
+<link rel="stylesheet" href="chs.css" type="text/css"/>
+
+</head>
+
+<body {bgcolor="#D8F0F8" text= "#000000";} lang=EN-US>
+
+
+<a href="r50.html" ><img width=75 height=64 src="../images/fireworksbut.jpg" title="back to 50th page" border="1" /></a>
+
+<h1> Countdown to Reunion </h1>
+<p>August 6, 2022 at 7:00:00 pm
+</p>
+
+
+
+
+
+<script type="text/javascript">
+//######################################################################################
+// Author: ricocheting.com
+// Version: v2.0
+// Date: 2021-09-19
+// Description: displays the amount of time until the "dateFuture" entered below.
+
+// NOTE: the month entered must be one less than current month. ie; 0=January, 11=December
+// NOTE: the hour is in 24 hour format. 0=12am, 15=3pm etc
+// format: dateFuture1 = new Date(year,month-1,day,hour,min,sec)
+// example: dateFuture1 = new Date(2022,09,06,19,00,00) = August 6, 2022 - 7:00:00 pm
+
+dateFuture1 = new Date(2022,9,06,19,0,0);
+
+// TESTING: comment out the line below to print out the "dateFuture" for testing purposes
+//document.write(dateFuture +"<br />");
+
+
+//###################################
+//nothing beyond this point
+function GetCount(ddate,iid){
+
+	dateNow = new Date();	//grab current date
+	amount = ddate.getTime() - dateNow.getTime();	//calc milliseconds between dates
+	delete dateNow;
+
+	// if time is already past
+	if(amount < 0){
+		document.getElementById(iid).innerHTML="Now!";
+	}
+	// else date is still good
+	else{
+		years=0;weeks=0;days=0;hours=0;out="";
+
+		amount = Math.floor(amount/1000);//kill the "milliseconds" so just secs
+
+		years=Math.floor(amount/31536000);//years (no leapyear support)
+		amount=amount%31536000;
+
+		weeks=Math.floor(amount/604800);//weeks
+		amount=amount%604800;
+
+		days=Math.floor(amount/86400);//days
+		amount=amount%86400;
+
+		hours=Math.floor(amount/3600);//hours
+		amount=amount%3600;
+
+		out += (years<=9?'0':'')+years +" "+((years==1)?"year":"years")+", ";
+		out += weeks +" "+((weeks==1)?"week":"weeks")+", ";
+		out += days +" "+((days==1)?"day":"days")+", ";
+		if(hours != 0){out += hours +" "+((hours==1)?"hour":"hours")+", ";}
+		out = out.substr(0,out.length-2);
+		document.getElementById(iid).innerHTML=out;
+
+		setTimeout(function(){GetCount(ddate,iid)}, 1000);
+	}
+}
+
+window.onload=function(){
+	GetCount(dateFuture1, 'countbox1');
+	//you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
+};
+</script>
+
+<div id="countbox1"></div>
+<br /><br /><br />
+
+<img width=76 height=135 src="../images/countsandbut.jpg" title="the sands of time"/>
+
+
+
+
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Class of 72</title>
+
+<link rel="stylesheet" href="chs.css" type="text/css"/>
+
+</head>
+
+<body class="style2">
+
+<div>
+
+<img width=477 height=106 src="../images/eventdet.jpg" />
+
+
+<br /><br />
+<a href="r45.html" ><img width=75 height=64 src="../images/fireworksbut.jpg" title="back to 45th page" border="1" /></a>
+
+</div>
+
+
+
+<div class="linkstyle">
+
+<p> Our 45th Class Reunion will be held <br />over the weekend of July 7th, 2017.<br /><br />The weekend starts out with a buffet dinner <br />on Friday, July 7,  from 7-11 pm,<br />at the River Club<br />78 Border St., Scituate<br /> 
+*buffet dinner, cash bar, and music*<br /><br />For those attending the reunion,<br /> there will also be a pool party/cookout the next day from noon-5 p.m.,<br />details to come.<br />* * *
+<br />These events are for anyone who has ever been <br />a member of the CHS Class of 1972.<br />
+<br />Use the PayPal button below to purchase your<br /> $60(per person) tickets,<br />or mail checks written to   
+ 'Class of 1972 reunion' to:<br /> 
+  S.Benterou, 1295 Bordeaux St., Pleasanton CA 94566</p>
+
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="465UYEPLN79YJ">
+<table class="no-border">
+<tr><td><input type="hidden" name="on0" value="45th Reunion tickets"><h1>45th Reunion tickets</h1><select name="os0">
+	<option value="1 ticket">1 ticket $60.00 USD</option>
+	<option value="2 tickets">2 tickets $120.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+ 
+<br />
+</div>
+
+
+</body>
+</html>
+

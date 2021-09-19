@@ -6,21 +6,17 @@
 
 <link rel="stylesheet" href="chs.css" type="text/css"/>
 
+
 </head>
 
 <body {bgcolor="#D8F0F8" text= "#000000";} lang=EN-US>
 
 
-<a href="r40.html" ><img width=75 height=64 src="../images/fireworksbut.jpg" title="back to 40th page" border="1" /></a>
+<a href="r50.html" ><img width=75 height=64 src="../images/fireworksbut.jpg" title="back to 50th page" border="1" /></a>
 
 <h1> Countdown to Reunion </h1>
-<p>July 28, 2012 at 7:00:00 pm
+<p>July 7, 2017 at 7:00 pm
 </p>
-
-
-
-
-
 <script type="text/javascript">
 //######################################################################################
 // Author: ricocheting.com
@@ -31,9 +27,9 @@
 // NOTE: the month entered must be one less than current month. ie; 0=January, 11=December
 // NOTE: the hour is in 24 hour format. 0=12am, 15=3pm etc
 // format: dateFuture1 = new Date(year,month-1,day,hour,min,sec)
-// example: dateFuture1 = new Date(2012,07,28,19,00,00) = July 28, 2012 - 7:00:00 pm
+// example: dateFuture1 = new Date(2003,03,26,14,15,00) = April 26, 2003 - 2:15:00 pm
 
-dateFuture1 = new Date(2012,7,28,19,0,0);
+dateFuture1 = new Date(2017,6,7,19,0,0);
 
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
@@ -53,15 +49,9 @@ function GetCount(ddate,iid){
 	}
 	// else date is still good
 	else{
-		years=0;weeks=0;days=0;hours=0;out="";
+		days=0;hours=0;out="";
 
 		amount = Math.floor(amount/1000);//kill the "milliseconds" so just secs
-
-		years=Math.floor(amount/31536000);//years (no leapyear support)
-		amount=amount%31536000;
-
-		weeks=Math.floor(amount/604800);//weeks
-		amount=amount%604800;
 
 		days=Math.floor(amount/86400);//days
 		amount=amount%86400;
@@ -69,9 +59,7 @@ function GetCount(ddate,iid){
 		hours=Math.floor(amount/3600);//hours
 		amount=amount%3600;
 
-		out += "+((years==1)?"year":"years")+", ";
-		out += weeks +" "+((weeks==1)?"week":"weeks")+", ";
-		out += days +" "+((days==1)?"day":"days")+", ";
+		if(days != 0){out += days +" "+((days==1)?"day":"days")+", ";}
 		if(hours != 0){out += hours +" "+((hours==1)?"hour":"hours")+", ";}
 		out = out.substr(0,out.length-2);
 		document.getElementById(iid).innerHTML=out;
@@ -85,8 +73,8 @@ window.onload=function(){
 	//you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
 };
 </script>
-
 <div id="countbox1"></div>
+
 <br /><br /><br />
 
 <img width=76 height=135 src="../images/countsandbut.jpg" title="the sands of time"/>
